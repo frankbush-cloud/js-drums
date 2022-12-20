@@ -1,0 +1,139 @@
+<! DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- <div class="keys">
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">clap</span>
+    </div>
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    <div data-key="68" class="key">
+      <kbd>D</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div data-key="70" class="key">
+      <kbd>F</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div data-key="71" class="key">
+      <kbd>G</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div data-key="72" class="key">
+      <kbd>H</kbd>
+      <span class="sound">ride</span>
+    </div>
+    <div data-key="74" class="key">
+      <kbd>J</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div data-key="75" class="key">
+      <kbd>K</kbd>
+      <span class="sound">tom</span>
+    </div>
+    <div data-key="76" class="key">
+      <kbd>L</kbd>
+      <span class="sound">tink</span>
+    </div>
+  </div>
+
+  <audio data-key="65" src="sounds/clap.wav"></audio>
+  <audio data-key="83" src="sounds/hihat.wav"></audio>
+  <audio data-key="68" src="sounds/kick.wav"></audio>
+  <audio data-key="70" src="sounds/openhat.wav"></audio>
+  <audio data-key="71" src="sounds/boom.wav"></audio>
+  <audio data-key="72" src="sounds/ride.wav"></audio>
+  <audio data-key="74" src="sounds/snare.wav"></audio>
+  <audio data-key="75" src="sounds/tom.wav"></audio>
+  <audio data-key="76" src="sounds/tink.wav"></audio>
+
+  <script>
+    // TODO: Add your code here
+    function playSound(event){
+      //console.log(event.key, event.keyCode);
+      const key = document.querySelector(`div[data-key="${event.keyCode}"]`);
+      const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`);
+
+     // console.log(key, audio);
+      if(!audio){
+        return;
+      }
+      key.classList.add("playing");
+      audio.currentTime = 0;
+      audio.play();
+    }
+
+    function removeTransition(event){
+      if(event.propertyName === "transform"){
+        //console.log(event);
+        event.target.classList.remove("playing");
+      }
+      
+    }
+    const keys = Array.from(document.querySelectorAll(".key"));
+    //console.log(keys);
+    keys.forEach((key) => key.addEventListener("transitionend", removeTransition));
+
+    window.addEventListener("keydown", playSound);
+  </script> -->
+  <p1>This is home to game-changing visual content.We house snapshots of the <strong>rarest</strong> and most epic places in the world.</p1>
+    <p1>Whether you are a traveller or an enthusiast of nature, these pictures will excite your inner core and broaden your imagination.</p1>
+    <p1>The sight of these shots will reve up the urge to travel the world and visit these places.</p1> 
+    <p>Below are some of the places we will be showcasing:</p>
+    <ul>
+        <li>Crooked Forest in Szczecin, Poland</li>
+        <li>“The Door to Hell” in Derweze, Turkmenistan</li>
+        <li>Inverted tower in Quinta de Regaleira, Portugal </li>
+        <li>Love Tunnel, Ukraine</li>
+        <li>Caño Cristales, Colombia</li>
+        <li>Coyote Buttes, Arizona/Utah </li>
+        <li>Glow Worm Caves Waipu Cave, New Zealand </li>
+        <li>Underwater waterfall, Mauritius</li>
+        <li>Grand Prismatic spring, USA</li>
+        <li>Lake Retba, Senegal</li>
+    </ul>
+    <h2>1. Underwater waterfall, Mauritius</h2>
+    <p>Found in the South West part of the island,the sea appears to have an underwater waterfall. This optical illusion is as a result of the sea floor structure. What we see isn't water plunging into an abyss but particles of soil being pushed by the water current. The soil particles actually plunge down to depths of almost two and a half miles thus creating the apparition of a water fall beneath the sea.</p>
+    <img src="https://image.shutterstock.com/image-photo/aerial-view-tropical-island-deep-260nw-1395112715.jpg"height="300"width="400">
+    <h2>2. Love Tunnel, Ukraine</h2>
+    <p>The tunnel of love is a railway connecting two cities in UKraine. Throughout the years, nature has turned this speccific route into a beautiful grove making it an attraction especially for couples since it is said that if a couple in true love walks through here and wishes something, then the wish is bound to come true.</p>
+    <img src="https://image.shutterstock.com/image-photo/railway-spring-forest-tunnel-love-260nw-646491592.jpg"height="300"width="400">
+    <h2>3. "The Door to Hell", Derweze, Turkmenistan</h2>
+    <p>In the 1970's Turkmenistan was part of the Soviet Union and the authorities wanted a campaign that would identify all areas of natural resources that culd be mined to support the growing population. In 1971 geologists arrived in the area and speculated that below the ground existed a cavern that had oil. They decided to dig around and ended up finding a pocket of gas beneath the surface. No official information exists on what happened afterwards but close participants in the drilling exercise claim that the ground around collapsed burying the drilling equipment and several scientists at the site. Researchers had a problem because they later discovered that the gas been emmitted was methane which was hazardous. They figured the only way to counter the health hazard was to burn the gas after they calculated that it would take only a few weeks for it to be depleted. A grenade was thrown into the pit and thus the 'gate of hell' was born. 50 years later and the hole is still on fire. The crater's estimated size is 230 feet across and 66 feet deep and has now become one of the most visited sites in the country.</p>
+    <img src="https://i.redd.it/mc9b04ovscx41.jpg"height="300"width="400">
+    <h2>4. Lake Retba, Senegal</h2>
+    <p>Found in the North West Coast of Africa,18 miles from Dakar is Lake Retba that has very high salt content. This provides very suitable conditions for a certain species of algae which are bright red in color to thrive. This algae makes the water appear pink and this effect is made even more visible during the dry season and due to the magenta bushes growing around the lake.</p>
+    <img src="https://i.pinimg.com/736x/27/f3/2b/27f32bd0289c7b4f48888fd60477dff5.jpg"height="300"width="400">
+    <h2>5. Glow worm Sky, Waipu Cave,New Zealand</h2>
+    <p>At Waitomo on the North Island of New Zealand this cave is known for its population of Arachnocampa luminosa, a glowworm species found exclusively in New Zealand. These worms illuminate the cave's ceiling with a beautiful blue glow that lightens up the cave's path and you can trust the worms to be your guide as you explore the caves.</p>
+    <img src="https://i.pinimg.com/originals/54/b0/15/54b01570e8a022b98c925f11c2c0ff41.jpg"height="300"width="400">
+    <h2>6. Crooked Forest in Szczecin, Poland</h2>
+    <p>This phenomenon has confused researchers since it was firs discovered. There is an estimated 400 pine trees that grow differently to normal.These trees grow and curve toward the north before growing upwards again. Unconfirmed theories exist as to why the trees grow in such a manner.</p>
+    <img src="https://image.shutterstock.com/image-photo/weird-curious-forest-poland-260nw-787744663.jpg"height="300"width="400">
+    <h2>7. Grand Prismatic spring, USA</h2>
+    <p>The stunningly colorful Grand Prismatic spring is found in Yellowstone National Park and is the largest hotspring in USA. Its normal degrees is about 160 degrees Farenheit and its because of this that it is surrounded by such vibrant rings. The colors are created by the presence of microbes that live in hot environments and you'll see reds, blues,oranges,yellows and greens depending on the time of the year.</p>
+    <img src="https://thumbs.dreamstime.com/b/panoramic-view-grand-prismatic-spring-yellowstone-national-park-112171232.jpg"height="300"width="400">
+    <h2>8. Coyote Buttes,Arizona.</h2>
+    <p>Home to dinosaur trackways with more than a thousand dinosaur footprints this beauty is a must visit for palaentology enthusiasts. These red sandstone figures offer optimal locations for hikers and nature lovers. Pictures taken here give an <em>out of the world</em> experience. </p>
+    <img src="https://ktar.com/wp-content/uploads/2017/07/coyote-buttes-620x370.jpg"height="300"width="400">
+    <h2>9. Caño Cristales, Colombia</h2>
+    <p>This is a small tributary river in Colombia. Due to its unique plant life it is considered the most beautiful river in the world. The flowing water passes through a region of the Amazon rainforest and the riverbed has dips and holes because of the way the rocks cut and the current erodes the bed rock which gives a suitable growth area for a species of the algae plant that is red in color. This river is also known as the <strong><em>light rainbow</em></strong> due to the 5 colors it owns: red plants (growing on the river), black rocks, green algae, blue water and yellow sand</p>
+    <img src="https://image.shutterstock.com/image-photo/rainbow-river-five-colors-colombia-260nw-1046165710.jpg"height="300"width="400">
+    <h2>10. Inverted tower, Quinta de Regaleira, Portugal</h2>
+    <p> Safeguarded within a Unesco World Heritage landscape, the Inverted tower of Quinta da Regaleira is a perfect mix of Gothic, Egyptian, Moorish and Renaissance architecture. A pair of wells, called the Initiation Wells, spiral down deep the earth, like inverted towers. The wells were never used to collect water but instead, were used for a mysterious initiation ritual within the Knights of Templar tradition.</p>
+    <img src="https://thumbs.dreamstime.com/b/initiation-well-k-inverted-tower-quinta-da-regaleira-sintra-portugal-view-down-initiation-well-k-inverted-178370599.jpg"height="300"width="400">
+    
+</body>
+
+</html>
